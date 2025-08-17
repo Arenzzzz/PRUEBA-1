@@ -101,5 +101,12 @@ def agregar_preguntas():
             if not pregunta.endswith('?'):
                 pregunta = pregunta + '?'
             break
+    
+    i = 1   # Contador de opciones
+    opciones = []   # Lista para almacenar opciones ingresadas
+    print('Agrega 4 opciones de respuesta')
+    # Bucle para ingresar 4 opciones de respuesta
+        while i <= 4:
+            opcion = input(f'Opción {i}: ')
 
 agregar_preguntas()
