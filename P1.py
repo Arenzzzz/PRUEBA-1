@@ -108,5 +108,10 @@ def agregar_preguntas():
     # Bucle para ingresar 4 opciones de respuesta
         while i <= 4:
             opcion = input(f'Opción {i}: ')
+    
+    # Se verifica que se haya ingresado la respuesta dentro de las opciones
+    if respuesta not in opciones:
+            print('La respuesta no se encuentra en las opciones')
+            opciones.clear()    # Se vacía la lista de opciones
 
 agregar_preguntas()
